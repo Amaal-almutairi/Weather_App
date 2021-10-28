@@ -27,17 +27,17 @@
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location"
+                android:text="New York, US"
                 android:textColor="@color/white"
                 android:textSize="24dp">
 
             </TextView>
 
             <TextView
-                android:id="@+id/updated_at"
+                android:id="@+id/updatedID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Updated at"
+                android:text="Updated at: 24/09/2021   10:09  AM"
                 android:textColor="@color/white"
                 android:textSize="14sp">
 
@@ -45,14 +45,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/overviewContainer"
+            android:id="@+id/overviewC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/status"
+                android:id="@+id/statusid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -63,12 +63,12 @@
             </TextView>
 
             <TextView
-                android:id="@+id/temp"
+                android:id="@+id/tempid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-thin"
-                android:text="24°C"
+                android:text="17°C"
                 android:textColor="@color/white"
                 android:textSize="90sp">
 
@@ -81,10 +81,10 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/temp_min"
+                    android:id="@+id/temp_min_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Min temp"
+                    android:text="Low:14 °C"
                     android:textColor="@color/white">
 
                 </TextView>
@@ -94,10 +94,10 @@
                     android:layout_height="wrap_content"></Space>
 
                 <TextView
-                    android:id="@+id/temp_max"
+                    android:id="@+id/temp_max_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Max Temp"
+                    android:text="High: 19°C"
                     android:textColor="@color/white">
 
                 </TextView>
@@ -150,10 +150,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/sunrise"
+                        android:id="@+id/sunriseid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5:30am"
+                        android:text="6:45am"
                         android:textColor="@color/white"
                         android:textSize="14sp">
 
@@ -197,10 +197,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/sunset"
+                        android:id="@+id/sunsetid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5:30am"
+                        android:text="6:30am"
                         android:textColor="@color/white"
                         android:textSize="14sp">
 
@@ -244,10 +244,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/Wind"
+                        android:id="@+id/WindId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5:30am"
+                        android:text="0.45"
                         android:textColor="@color/white"
                         android:textSize="14sp">
 
@@ -303,10 +303,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/pressure"
+                        android:id="@+id/pressureid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5:30am"
+                        android:text="1018"
                         android:textColor="@color/white"
                         android:textSize="14sp">
 
@@ -352,10 +352,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/humidity"
+                        android:id="@+id/humidityid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5:30am"
+                        android:text="70"
                         android:textColor="@color/white"
                         android:textSize="14sp">
 
@@ -380,7 +380,8 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/refresh"/>
+                        android:src="@drawable/refresh"
+                        app:tint="@color/white" />
 
 
                     <Space
@@ -399,10 +400,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/refresh"
+                        android:id="@+id/refreshid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5:30am"
+                        android:text="Data"
                         android:textColor="@color/white"
                         android:textSize="14sp">
 
@@ -423,7 +424,7 @@
 
 
 <ProgressBar
-    android:id="@+id/loader"
+    android:id="@+id/loadId"
     android:layout_centerInParent="true"
     android:visibility="gone"
     android:layout_width="wrap_content"
@@ -432,7 +433,7 @@
 </ProgressBar>
 
     <TextView
-        android:id="@+id/errortext"
+        android:id="@+id/proId"
         android:layout_centerInParent="true"
         android:text="Something Went Wrong "
         android:visibility="gone"
